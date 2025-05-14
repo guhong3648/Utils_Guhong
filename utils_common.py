@@ -5,9 +5,9 @@ import numpy as np
 
 def make_dir(path, exist_ok=True):
     if not os.path.exists(path): 
-        os.mkdir(path, exist_ok=exist_ok)
+        os.makedirs(path, exist_ok=exist_ok)
         os.chmod(path, 0o777)
-
+        
 def globsort(path):
     return natsort.natsorted(glob.glob(path))
 
