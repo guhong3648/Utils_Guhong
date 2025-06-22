@@ -12,7 +12,6 @@ def load_data(model, patient):
     path_main = r"\\10.125.208.30\gpu_server_data\Guhong\Airway\res\Visualization"
     path_patient = os.path.join(path_main, model)
 
-    # 세 개의 파일 이름
     list_seg = [f'{patient}_FN.nii.gz',
                 f'{patient}_FP.nii.gz',
                 f'{patient}_y_data.nii.gz']
